@@ -1,7 +1,5 @@
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router'
 import logo from '../logo.svg'
-import { useQuery } from '@tanstack/react-query'
-import axios from 'axios'
 import { useEffect } from 'react'
 
 export const Route = createFileRoute('/')({
