@@ -1,15 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router'
 import logo from '../logo.svg'
-import { useEffect } from 'react'
 
 export const Route = createFileRoute('/')({
   component: App,
 })
 
 function App() {
-  useEffect(()=>{
-    window.location.href = 'https://ie-manager-back.onrender.com/api/notion/connect'
-  }, [])
   // const { isPending, error, data } = useQuery({
   //     queryKey: ['repoData'],
   //     queryFn: () =>
@@ -53,6 +49,7 @@ function App() {
         >
           Learn TanStack
         </a>
+        <button onClick={()=> window.location.href = 'https://ie-manager-back.onrender.com/api/notion/connect'}>AUTH</button>
       </header>
     </div>
   )
